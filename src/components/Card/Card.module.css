@@ -49,3 +49,9 @@
   font-weight: 300;
   color: var(--neutral_navy200);
 }
+
+@media screen and (max-width: 375px) {
+  .orange_background {
+    width: 100%;
+  }
+}

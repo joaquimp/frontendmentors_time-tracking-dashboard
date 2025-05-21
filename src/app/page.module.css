@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 20px;
   height: 100%;
+  padding: 12px;
 }
 
 .content {
@@ -12,15 +13,31 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .cards_line {
   display: flex;
   gap: 20px;
+}
+
+@media screen and (max-width: 375px) {
+  .main {
+    justify-content: flex-start;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .cards_line {
+    flex-direction: column;
+  }
 }

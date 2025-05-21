@@ -22,6 +22,8 @@ body,
 html {
   width: 100vw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -32,12 +34,6 @@ body {
   font-size: 18px;
   background-color: var(--neutral_navy950);
   color: white;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .attribution {

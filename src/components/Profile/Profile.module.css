@@ -45,3 +45,10 @@
 .unselected {
   color: var(--neutral_purple);
 }
+
+@media screen and (max-width: 375px) {
+  .main {
+    max-width: 100%;
+    width: 100%;
+  }
+}
