@@ -1,42 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --primary_purple: hsl(246, 80%, 60%);
+  --primary_orange: hsl(15, 100%, 70%);
+  --primary_blue: hsl(195, 74%, 62%);
+  --primary_pink: hsl(348, 100%, 68%);
+  --primary_green: hsl(145, 58%, 55%);
+  --primary_purple: hsl(264, 64%, 52%);
+  --primary_yellow: hsl(43, 84%, 65%);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  --neutral_navy950: hsl(226, 43%, 10%);
+  --neutral_navy900: hsl(235, 46%, 20%);
+  --neutral_purple: hsl(235, 45%, 61%);
+  --neutral_navy200: hsl(236, 100%, 87%);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
