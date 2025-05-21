@@ -1,63 +1,25 @@
-import Image from "next/image";
+import Profile from "@/components/Profile/Profile";
 import styles from "./page.module.css";
+import Card from "@/components/Card/Card";
 
 export default function Home() {
   return (
-    <>
-      Report for
-      Jeremy Robson
-
-      Daily
-      Weekly
-      Monthly
-
-      Work
-      5hrs
-      Previous - 7hrs
-      32hrs
-      Previous - 36hrs
-      103hrs
-      Previous - 128hrs
-
-      Play
-      1hr
-      Previous - 2hrs
-      10hrs
-      Previous - 8hrs
-      23hrs
-      Previous - 29hrs
-
-      Study
-      0hrs
-      Previous - 1hr
-      4hrs
-      Previous - 7hrs
-      13hrs
-      Previous - 19hrs
-
-      Exercise
-      1hr
-      Previous - 1hr
-      4hrs
-      Previous - 5hrs
-      11hrs
-      Previous - 18hrs
-
-      Social
-      1hr
-      Previous - 3hrs
-      5hrs
-      Previous - 10hrs
-      21hrs
-      Previous - 23hrs
-
-      Self Care
-      0hrs
-      Previous - 1hr
-      2hrs
-      Previous - 2hrs
-      7hrs
-      Previous - 11hrs
-    </>
+    <main className={styles.main}>
+      <div className={styles.content}>
+        <Profile />
+        <section className={styles.cards}>
+          <div className={styles.cards_line}>
+            <Card /> <Card /> <Card />
+          </div>
+          <div className={styles.cards_line}>
+            <Card /> <Card /> <Card />
+          </div>
+        </section>
+      </div>
+      <div className="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </main>
   );
 }
